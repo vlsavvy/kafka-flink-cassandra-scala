@@ -1,6 +1,6 @@
-package com.knoldus.services
+package com.streaming.services
 
-import com.knoldus.model.Car
+import com.streaming.model.Car
 import org.apache.flink.streaming.api.scala.{DataStream, StreamExecutionEnvironment}
 import org.apache.flink.streaming.connectors.cassandra.CassandraSink
 

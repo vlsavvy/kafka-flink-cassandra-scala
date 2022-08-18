@@ -1,8 +1,8 @@
-package com.knoldus.model.util
+package com.streaming.model.util
 
 //import org.apache.flink.connector.kafka.sink.KafkaRecordSerializationSchema
 import com.fasterxml.jackson.core.JsonProcessingException
-import com.knoldus.model.SensorReading
+import com.streaming.model.SensorReading
 import org.apache.flink.api.common.serialization.SerializationSchema
 /*import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.databind.SerializationFeature

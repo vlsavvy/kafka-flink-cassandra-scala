@@ -1,6 +1,6 @@
-package com.knoldus.services
+package com.streaming.services
 
-import com.knoldus.model.SensorReading
+import com.streaming.model.SensorReading
 import org.apache.flink.api.common.serialization.SimpleStringSchema
 import org.apache.flink.shaded.jackson2.com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility
 import org.apache.flink.shaded.jackson2.com.fasterxml.jackson.annotation.PropertyAccessor
@@ -25,10 +25,10 @@ class KafkaProducerService {
       new SimpleStringSchema()
     )
 
-    val objectMapper = new ObjectMapper().registerModule(new SimpleModule())
+/*    val objectMapper = new ObjectMapper().registerModule(new SimpleModule())
     objectMapper.setVisibility(PropertyAccessor.ALL, Visibility.NONE)
     objectMapper.setVisibility(PropertyAccessor.FIELD, Visibility.ANY)
     val dsString= sensorReadingDs
       .map{reading=>objectMapper.writeValueAsString(reading)}
-    dsString.addSink(kafkaProducer)  }
+    dsString.addSink(kafkaProducer) */ }
 }

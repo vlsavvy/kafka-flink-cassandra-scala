@@ -1,4 +1,4 @@
-package com.knoldus.services
+package com.streaming.services
 
 import org.apache.flink.api.common.serialization.SimpleStringSchema
 import org.apache.flink.streaming.api.scala.{DataStream, StreamExecutionEnvironment}
@@ -23,8 +23,8 @@ class KafkaSensorService {
 
     //Open Kafka connection and Streaming car data through topic.
     val properties:Properties = new Properties()
-    properties.setProperty("bootstrap.servers", "localhost:9092");
-    properties.setProperty("group.id", "testKafka");
+    properties.setProperty("bootstrap.servers", "localhost:9092")
+    properties.setProperty("group.id", "testKafka")
     val kafkaConsumer = new FlinkKafkaConsumer[String]("sensor", new SimpleStringSchema() , properties)
     environment.addSource(kafkaConsumer)
 

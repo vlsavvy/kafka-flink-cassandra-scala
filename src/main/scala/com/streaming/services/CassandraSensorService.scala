@@ -1,6 +1,6 @@
-package com.knoldus.services
+package com.streaming.services
 
-import com.knoldus.model.{SensorReading}
+import com.streaming.model.SensorReading
 import org.apache.flink.streaming.api.scala.DataStream
 import org.apache.flink.streaming.connectors.cassandra.CassandraSink
 

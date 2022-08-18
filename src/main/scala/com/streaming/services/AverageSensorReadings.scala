@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.knoldus.services
+package com.streaming.services
 
-import com.knoldus.model.{SensorReading, SensorSource, SensorTimeAssigner}
+import com.streaming.model.{SensorReading, SensorSource, SensorTimeAssigner}
 import org.apache.flink.api.common.serialization.SimpleStringSchema
 import org.apache.flink.shaded.jackson2.com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility
 import org.apache.flink.shaded.jackson2.com.fasterxml.jackson.annotation.PropertyAccessor

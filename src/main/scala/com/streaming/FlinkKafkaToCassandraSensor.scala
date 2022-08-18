@@ -1,7 +1,7 @@
-package com.knoldus
+package com.streaming
 
-import com.knoldus.model.{SensorReading}
-import com.knoldus.services.{CassandraSensorService, KafkaSensorService, KafkaService}
+import com.streaming.model.SensorReading
+import com.streaming.services.{CassandraSensorService, KafkaSensorService, KafkaService}
 import org.apache.flink.shaded.jackson2.com.fasterxml.jackson.databind.{JsonNode, ObjectMapper}
 import org.apache.flink.streaming.api.scala.{StreamExecutionEnvironment, createTypeInformation}
 

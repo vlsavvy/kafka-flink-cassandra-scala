@@ -13,19 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.knoldus.model
+package com.streaming.model
 
-import org.apache.flink.streaming.api.functions.timestamps.BoundedOutOfOrdernessTimestampExtractor
-import org.apache.flink.streaming.api.windowing.time.Time
+import org.apache.flink.shaded.jackson2.com.fasterxml.jackson.annotation.JsonProperty
 
-/**
-  * Assigns timestamps to SensorReadings based on their internal timestamp and
-  * emits watermarks with five seconds slack.
-  */
-class SensorTimeAssigner
-    extends BoundedOutOfOrdernessTimestampExtractor[SensorReading](Time.seconds(5)) {
-
-  /** Extracts timestamp from SensorReading. */
-  override def extractTimestamp(r: SensorReading): Long = r.timestamp
-
-}
+/** Case class to hold the SensorReading data. */
+case class SensorReading(
+                          @JsonProperty("id") id: String,
+                          @JsonProperty("timestamp") timestamp: Long,
+                          @JsonProperty("temperature") temperature: Double)

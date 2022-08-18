@@ -1,4 +1,4 @@
-package com.knoldus.model
+package com.streaming.model
 
 case class Car(
 								Name: String,

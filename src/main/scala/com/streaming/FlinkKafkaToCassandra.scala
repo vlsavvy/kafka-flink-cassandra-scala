@@ -1,7 +1,7 @@
-package com.knoldus
+package com.streaming
 
-import com.knoldus.model.Car
-import com.knoldus.services.{CassandraService, KafkaService}
+import com.streaming.model.Car
+import com.streaming.services.{CassandraService, KafkaService}
 import org.apache.flink.shaded.jackson2.com.fasterxml.jackson.databind.{JsonNode, ObjectMapper}
 import org.apache.flink.streaming.api.scala.{StreamExecutionEnvironment, createTypeInformation}
 

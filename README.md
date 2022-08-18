@@ -17,7 +17,7 @@ Running:
 
 Start Cassandra:
 ===============
-% export CASSANDRA_HOME=/Users/vidhyalakshmibalasubramanian/Documents/Other/apache-cassandra-3.10-src 
+% export CASSANDRA_HOME=/Users/<userxyz>/Documents/Other/apache-cassandra-3.10-src 
 bin % ./cassandra -f  
 
 Note:
@@ -25,7 +25,7 @@ if required in cassandra-env conf file - change the CASSANDRA_HOME/lib o libexec
 
 Start cqlsh:
 ===========
-- bin % cd /Users/vidhyalakshmibalasubramanian/Documents/Other/apache-cassandra-3.10/bin
+- bin % cd /Users/<userxyz>/Documents/Other/apache-cassandra-3.10/bin
 - bin % cqlsh
 
 - Create keyspace and tables:
@@ -52,7 +52,7 @@ Additional helper commands:
 
 Kafdrop - Kafka UI:
 ==================
-Other % /Users/vidhyalakshmibalasubramanian/Documents/Other/jdk-18.0.2.jdk/Contents/Home/bin/java -jar ./kafdrop.jar --kafka.javabrokerConnect=localhost:9092
+Other % /Users/<userxyz>/Documents/Other/jdk-18.0.2.jdk/Contents/Home/bin/java -jar ./kafdrop.jar --kafka.javabrokerConnect=localhost:9092
 
 
 Running Flink application: (FlinkKafkaToCassandra , FlinkKafkaToCassandraSensor)
